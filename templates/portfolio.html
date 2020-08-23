@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Portfolio</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-<nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">O meni</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-    </ul>
-</nav>
+{% block title %}Portfolio{% endblock title %}
+
+{% block content %}
 
 <h1>Vrlo dobro kodiranje i neki primjeri:</h1>
 
@@ -22,5 +12,6 @@
         <li><a href="https://gist.github.com/renatodjurdjevic/1f9e8105d967c0c9cd9fb2fdcb4d3ecf">Hairsaloon</a></li>
     </ul>
 
-</body>
-</html>
+<p>Datum: {{date}} Sat: {{hour}}</p>
+
+{% endblock content %}

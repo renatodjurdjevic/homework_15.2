@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>O meni</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-<nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">O meni</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-    </ul>
-</nav>
+{% block title %}O nama{% endblock title %}
 
-<h1>Lijepe riječi o meni...</h1>
+{% block content %}
 
-</body>
-</html>
+<h1>Lijepe riječi o nama...</h1>
+
+<p>Datum: {{date}} Sat: {{hour}}</p>
+
+{% endblock content %}
